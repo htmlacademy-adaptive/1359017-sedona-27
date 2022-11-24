@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Ekaterina Bolshakova](https://up.htmlacademy.ru/adaptive/27/user/1359017).
-* Наставник: `Неизвестно`.
+* Наставник: [Станислав Михайлов] (https://github.com/hramn1).
 
 ---
 
