@@ -1,0 +1,36 @@
+.feedback-form__title {
+  padding-top: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feedback-form__fieldset {
+  margin: 0;
+  border: none;
+  padding: 24px 20px 39px 20px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.feedback-form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form__field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.feedback-form__button {
+  width: 281px;
+}
+

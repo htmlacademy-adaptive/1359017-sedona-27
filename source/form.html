@@ -2,10 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
-  <body >
-    <div class="container">
+  <body class="page">
+    <div class="page__container">
       <header class="main-header">
         <a class="main-header__logo main-header__logo--hidden">
           <img src="img/logo.svg" alt="лого">
@@ -17,22 +18,22 @@
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list site-list">
               <li class="site-list__item">
-                <a href="index.html">
+                <a class="site-list__link" href="index.html">
                   Главная
                 </a>
               </li>
               <li class="site-list__item">
-                <a href="catalog.html">
+                <a class="site-list__link" href="catalog.html">
                   Фото и видео
                 </a>
               </li>
               <li class="site-list__item site-list__item--active">
-                <a href="">
+                <a class="site-list__link" href="">
                   форма отзыва
                 </a>
               </li>
               <li class="site-list__item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
                   HTML Academy
                 </a>
               </li>
@@ -44,7 +45,7 @@
     <main class="main-container">
       <section class="welcome">
         <div class="welcome__logo">
-          <img class="welcome__logo-image" src="img/SEDONA.svg" alt="мини/лого">
+          <img class="welcome__logo-image" src="img/SEDONA.svg" alt="мини/лого" width="229" height="39">
         </div>
         <div class="welcome__wrapper welcome__wrapper--form-banner">
       <h1 class="welcome__title">Оставьте свой отзыв</h1>
@@ -54,8 +55,9 @@
       <section class="feedback">
         <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="feedback-form__enter-yourself">
+          <fieldset class="feedback-form__fieldset feedback-enter">
             <legend class="feedback-form__title">Представьтесь:</legend>
+            <div class="feedback-form__wrapper">
             <label class="feedback-form__label input-block">
               <span class="input-block__title">Имя*:</span>
               <input class="input-block__field" type="text" name="form-field" placeholder="Пётр" required>
@@ -68,8 +70,9 @@
               <span class="input-block__title">Отчество:</span>
               <input class="input-block__field" type="text" name="form-field" placeholder="Викторович" required>
             </label>
+          </div>
           </fieldset>
-          <fieldset class="feedback-form__contacts">
+          <fieldset class="feedback-form__fieldset contacts">
             <legend class="feedback-form__title">Контактная информация:</legend>
             <label class="feedback-form__label input-block input-block--telephone">
               <span class="input-block__title">Контактный телефон*:</span>
@@ -80,9 +83,10 @@
               <input class="input-block__field input-block__field--color input-block__field--width" placeholder="Введите e-mail" type="text" name="field-email" required>
             </label>
           </fieldset>
-          <fieldset class="feedback-form__impressions">
+          <fieldset class="feedback-form__fieldset impressions">
             <legend class="feedback-form__title feedback-form__title--caption">Ваше общее впечатление:
             </legend>
+            <div class="feedback-form__field-group">
             <ul class="feedback-form__list feedback-form__list--impressions">
               <li class="feedback-form__item">
                 <label class="feedback-form__label control-mark-block">
@@ -106,10 +110,11 @@
                 </label>
               </li>
             </ul>
+          </div>
           </fieldset>
-          <fieldset class="feedback-form__attractions">
+          <fieldset class="feedback-form__fieldset attractions">
             <legend class="feedback-form__title feedback-form__title--caption">Посещенные достопримечательности:</legend>
-
+            <div class="feedback-form__field-group">
               <ul class="feedback-form__list feedback-form__list--attractions">
                 <li class="feedback-form__item">
                   <label class="feedback-form__label control-mark-block control-mark-block--checkbox-mark">
@@ -140,13 +145,16 @@
                   </label>
                 </li>
               </ul>
+            </div>
           </fieldset>
           <fieldset class="feedback-form__fieldset comment">
             <legend class="feedback-form__title">Опишите свои эмоции:</legend>
+            <div class="feedback-form__field-group">
             <label class="feedback-form__label input-block input-block--textarea">
               <span class="visually-hidden">Комментарий</span>
               <textarea class="input-block__field" name="comment" placeholder="Опишите подробно все свои восторги" cols="28" rows="5" wrap="hard"></textarea>
             </label>
+          </div>
           </fieldset>
           <div class="feedback-form__button-wrapper">
             <button class="button feedback-form__button" type="submit">отправить отзыв</button>

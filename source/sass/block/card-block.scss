@@ -1,0 +1,22 @@
+.card-block {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.card-block__like {
+  order: 2;
+  width: 69px;
+  height: 26px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.card-block__wrapper {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+}

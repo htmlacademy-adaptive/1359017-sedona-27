@@ -1,5 +1,21 @@
-// Начните писать стили здесь
+//общие файлы
 @import "./global/fonts.scss";
 @import "./global/visually-hidden.scss";
 @import "./global/variables.scss";
-@import "./blocks/main-navigation.scss";
+@import "./global/global.scss";
+//БЭМ блоки
+@import "./block/main-navigation.scss";
+@import "./block/main-header.scss";
+@import "./block/welcome.scss";
+@import "./block/advantages.scss";
+@import "./block/page-search.scss";
+@import "./block/main-footer.scss";
+@import "./block/social.scss";
+@import "./block/copyright.scss";
+@import "./block/site-list.scss";
+@import "./block/feedback.scss";
+@import "./block/input.scss";
+@import "./block/control-mark.scss";
+@import "./block/button.scss";
+@import "./block/card-block.scss";
+@import "./block/photo-gallery.scss";
