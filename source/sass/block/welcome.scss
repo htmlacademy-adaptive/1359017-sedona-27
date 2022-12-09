@@ -1,0 +1,28 @@
+.welcome__logo {
+  margin-bottom: 32px;
+  padding: 90px 19px 85px 19px;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.welcome__title {
+  margin: 0;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.welcome__subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.welcome__wrapper {
+  padding: 36px 20px 28px 20px;
+  text-align: center;
+}
