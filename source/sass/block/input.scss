@@ -5,19 +5,21 @@
 }
 
 .input-block__title {
+  font-family: $accent-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  color: #333333;
   text-transform: uppercase;
 }
 
 .input-block__field {
   height: 58px;
-  width: 264px;
+  width: 280px;
   padding-left: 16px;
   background-color: #f2f2f2;
   border: none;
-  font-family: "PT Sans", sans-serif;
+  font-family: $accent-font;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;

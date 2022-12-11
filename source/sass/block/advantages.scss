@@ -30,7 +30,6 @@
   min-width: 240px;
 }
 
-
 .advantages__wrapper {
   margin-bottom: 39px;
 }
@@ -43,16 +42,17 @@
 
 .advantages__title {
   margin: 0;
+  font-family: $accent-font;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
 }
 
-
 .advantages__number,
 .advantages__description {
   margin: 0;
+  font-family: $accent-font;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
@@ -65,4 +65,3 @@
   list-style-type: none;
   padding: 23px 18px 52px 18px;
 }
-

@@ -1,13 +1,25 @@
 .welcome__logo {
+  background-image: url("../img/back-mobile.jpg");
   margin-bottom: 32px;
   padding: 90px 19px 85px 19px;
-  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
+}
+
+.welcome__logo-form-banner {
+  background-image: url("../../img/back-desktop.jpg");
+  background-color: #000000;
+}
+
+.welcome__logo-form {
+  padding-left: 50px;
 }
 
 .welcome__title {
   margin: 0;
+  padding: 0;
+  padding-bottom: 35px;
   color: #000000;
+  font-family: $accent-font;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -16,7 +28,10 @@
 
 .welcome__subtitle {
   margin: 0;
+  padding: 0;
+  padding-bottom: 32px;
   font-weight: 400;
+  font-family: $accent-font;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
