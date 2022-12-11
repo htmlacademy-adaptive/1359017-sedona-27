@@ -6,6 +6,7 @@
 
 .page-search__title {
   margin: 0;
+  font-family: $accent-font;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -14,6 +15,8 @@
 
 .page-search__subtitle {
   margin: 0;
+  font-family: $accent-font;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;

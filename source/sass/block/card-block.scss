@@ -5,10 +5,30 @@
   line-height: 21px;
 }
 
+.card-block__title {
+  margin: 0;
+  font-family: $accent-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.card-block__author {
+  margin: 0;
+  font-family: $accent-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 .card-block__like {
   order: 2;
   width: 69px;
   height: 26px;
+  font-family: $accent-font;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;

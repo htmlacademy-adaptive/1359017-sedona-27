@@ -44,8 +44,8 @@
 
     <main class="main-container">
       <section class="welcome">
-        <div class="welcome__logo">
-          <img class="welcome__logo-image" src="img/SEDONA.svg" alt="мини/лого" width="229" height="39">
+        <div class="welcome__logo welcome__logo-form-banner">
+          <img class="welcome__logo-form" src="img/SEDONA.svg" alt="мини/лого" width="229" height="39">
         </div>
         <div class="welcome__wrapper welcome__wrapper--form-banner">
       <h1 class="welcome__title">Оставьте свой отзыв</h1>
@@ -55,6 +55,7 @@
       <section class="feedback">
         <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="feedback-form__module">
           <fieldset class="feedback-form__fieldset feedback-enter">
             <legend class="feedback-form__title">Представьтесь:</legend>
             <div class="feedback-form__wrapper">
@@ -72,6 +73,8 @@
             </label>
           </div>
           </fieldset>
+        </div>
+        <div class="feedback-form__module">
           <fieldset class="feedback-form__fieldset contacts">
             <legend class="feedback-form__title">Контактная информация:</legend>
             <label class="feedback-form__label input-block input-block--telephone">
@@ -83,6 +86,8 @@
               <input class="input-block__field input-block__field--color input-block__field--width" placeholder="Введите e-mail" type="text" name="field-email" required>
             </label>
           </fieldset>
+        </div>
+        <div class="feedback-form__module">
           <fieldset class="feedback-form__fieldset impressions">
             <legend class="feedback-form__title feedback-form__title--caption">Ваше общее впечатление:
             </legend>
@@ -112,6 +117,8 @@
             </ul>
           </div>
           </fieldset>
+          </div>
+          <div class="feedback-form__module">
           <fieldset class="feedback-form__fieldset attractions">
             <legend class="feedback-form__title feedback-form__title--caption">Посещенные достопримечательности:</legend>
             <div class="feedback-form__field-group">
@@ -147,6 +154,8 @@
               </ul>
             </div>
           </fieldset>
+        </div>
+        <div class="feedback-form__module">
           <fieldset class="feedback-form__fieldset comment">
             <legend class="feedback-form__title">Опишите свои эмоции:</legend>
             <div class="feedback-form__field-group">
@@ -156,6 +165,7 @@
             </label>
           </div>
           </fieldset>
+        </div>
           <div class="feedback-form__button-wrapper">
             <button class="button feedback-form__button" type="submit">отправить отзыв</button>
             <p class="feedback-form__required">* — обязательные поля</p>
