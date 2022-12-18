@@ -2,10 +2,13 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .page-search__title {
   margin: 0;
+  padding-bottom: 19px;
+  font-family: $accent-font;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -14,6 +17,9 @@
 
 .page-search__subtitle {
   margin: 0;
+  margin-bottom: 32px;
+  font-family: $accent-font;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
@@ -21,5 +27,11 @@
 
 .page-search__button {
   width: 284px;
-  max-height: 26px;
+  font-family: $accent-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 16px 0 16px 0;
+  margin: 0 18px 49px 18px;
 }

@@ -6,4 +6,8 @@
   margin: 0 auto;
   width: 320px;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
 }

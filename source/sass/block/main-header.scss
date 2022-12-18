@@ -1,9 +1,21 @@
 .main-header {
   width: 100%;
   justify-content: center;
+  position: relative;
+  min-height: 56px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: block;
+  }
 }
 
 .main-header__logo {
   padding-left: 70px;
   justify-self: center;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    z-index: 2;
+  }
 }
