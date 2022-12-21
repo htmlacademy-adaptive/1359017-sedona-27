@@ -1,8 +1,22 @@
+.feedback {
+  padding: 102px 60px 64px 60px;
+}
+
 .feedback-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 648px;
+  }
 }
+
 
 .feedback-form__title {
   margin: 0;
@@ -21,6 +35,7 @@
 
 .feedback-form__fieldset {
   margin: 0;
+  margin-bottom: 34px;
   border: none;
 }
 

@@ -1,0 +1,15 @@
+.impressions {
+  width: 320px;
+  min-width: 280px;
+  padding: 0;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
