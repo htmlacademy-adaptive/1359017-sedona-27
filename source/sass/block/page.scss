@@ -3,15 +3,18 @@
 }
 
 .page__container {
-  margin: 0 auto;
-}
-
-.page__body {
-  margin: 0 auto;
   width: 320px;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.page__body {
+  margin: 0 auto;
 }

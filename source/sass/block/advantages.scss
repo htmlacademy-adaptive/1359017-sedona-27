@@ -50,6 +50,10 @@
     justify-content: center;
     border: none;
   }
+
+  &--house-icon::after {
+    content: url("../../img/icon-house-mob.svg");
+  }
 }
 
 .advantages__item--first {
@@ -88,8 +92,11 @@
     flex-direction: column;
     justify-content: center;
     padding: 0;
-    min-width: 256px;
-    max-width: 400px;
+    width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
   }
 }
 

@@ -8,6 +8,10 @@
     padding-top: 61px;
     padding-bottom: 58px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 66px;
+  }
 }
 
 .page-search__title {
