@@ -2,24 +2,50 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+    padding-bottom: 58px;
+  }
 }
 
 .page-search__title {
   margin: 0;
+  padding-bottom: 19px;
+  font-family: $accent-font;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
 }
 
 .page-search__subtitle {
   margin: 0;
+  margin-bottom: 32px;
+  font-family: $accent-font;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .page-search__button {
   width: 284px;
-  max-height: 26px;
+  font-family: $accent-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 16px 0 16px 0;
+  margin: 0 18px 49px 18px;
 }

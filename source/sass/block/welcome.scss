@@ -1,25 +1,72 @@
 .welcome__logo {
-  margin-bottom: 32px;
-  padding: 90px 19px 85px 19px;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: contain, cover;
+
+  @media (min-width: 768px) {
+    background-image: url("../../img/big.back-desktop.jpg");
+    height: 518px;
+  }
+}
+
+
+.welcome__logo-image {
+  display: block;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 85px;
+  /*.welcome__logo-image {
+  @media (min-width: 768px) {
+    width: 461px;
+    height: 153px;
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+}*/
+}
+
+
+.welcome__logo-form-banner {
+  background-image: url("../../img/back-desktop.jpg");
+  background-color: #000000;
+}
+
+.welcome__logo-form {
+  padding-left: 50px;
 }
 
 .welcome__title {
   margin: 0;
+  padding: 0;
+  padding-bottom: 35px;
   color: #000000;
+  font-family: $accent-font;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    padding-top: 49px;
+    padding-bottom: 10px;
+  }
 }
 
 .welcome__subtitle {
   margin: 0;
+  padding: 0;
+  padding-bottom: 32px;
   font-weight: 400;
+  font-family: $accent-font;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    line-height: 24px;
+    padding-bottom: 55px;
+  }
 }
 
 .welcome__wrapper {

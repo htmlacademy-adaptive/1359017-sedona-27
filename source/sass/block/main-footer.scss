@@ -1,18 +1,36 @@
 .main-footer__hashtag {
   margin-bottom: 33px;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 14px;
+    margin-bottom: 0;
+  }
 }
 
 .main-footer__link-hashtag {
   margin: 0;
   color: #000000;
   text-decoration: none;
+  font-family: $accent-font;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .main-footer__wrapper {
   padding-top: 29px;
   padding-bottom: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 36px 76px 30px 59px;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: space-between;
+  }
 }

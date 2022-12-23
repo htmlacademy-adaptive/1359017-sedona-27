@@ -43,7 +43,7 @@
       </nav>
     </header>
     <main class="main-container">
-      <section class="welcome">
+      <section class="welcome__index">
         <div class="welcome__logo">
           <img class="welcome__logo-image" src="img/text-index.svg" alt="приветственное лого">
         </div>
@@ -55,7 +55,7 @@
       <section class="advantages">
         <div class="advantages__wrapper">
           <ul class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--first">
               <div class="advantages__item-wrapper advantages__item-block">
                 <h3 class="advantages__title">Настоящий городок</h3>
                 <p class="advantages__number">№1</p>
@@ -83,7 +83,7 @@
                 </li>
               </ul>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--second">
               <div class="advantages__item-wrapper">
                 <h3 class="advantages__title">Там есть мост дьявола</h3>
                 <p class="advantages__number">№2</p>
@@ -110,14 +110,16 @@
         </div>
       </section>
       <section class="page-search">
+        <div class="page-search__wrapper">
         <h2 class="page-search__title">Заинтересовались?</h2>
         <p class="page-search__subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</P>
         <a class="button page-search__button" href="">Найти гостиницу</a>
+      </div>
       </section>
       <section class="contacts">
       <h2 class="visually-hidden" hidden>Контакты</h2>
-      <div class="contacts__map" aria-label="Карта" id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20Arizona%2086336%2C%20Yhdysvallat!5e0!3m2!1sfi!2ses!4v1669898258479!5m2!1sfi!2ses" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      <div class="contacts__map contacts-map__sedona" aria-label="Карта" id="map">
+        <iframe class="contacts-map__sedona" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20Arizona%2086336%2C%20Yhdysvallat!5e0!3m2!1sfi!2ses!4v1669898258479!5m2!1sfi!2ses" width="320" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
       </section>
