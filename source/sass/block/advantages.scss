@@ -1,6 +1,9 @@
 .advantages {
+  padding-bottom: 39px;
+
   @media (min-width: $tablet-width) {
     width: 768px;
+    padding: 0;
   }
 }
 
@@ -80,8 +83,6 @@
 }
 
 .advantages__wrapper {
-  margin-bottom: 39px;
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;

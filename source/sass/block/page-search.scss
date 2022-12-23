@@ -3,6 +3,11 @@
   flex-direction: column;
   margin-bottom: 10px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+    padding-bottom: 58px;
+  }
 }
 
 .page-search__title {
@@ -13,6 +18,11 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
 }
 
 .page-search__subtitle {
@@ -23,6 +33,10 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .page-search__button {

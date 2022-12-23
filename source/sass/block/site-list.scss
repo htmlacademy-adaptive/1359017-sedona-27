@@ -23,6 +23,10 @@
     width: 100%;
     background-color: #ffffff;
     box-shadow: none;
+
+    &:nth-child(3) {
+      grid-column-start: 4;
+    }
   }
 }
 
