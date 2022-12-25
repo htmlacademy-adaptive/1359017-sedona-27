@@ -11,4 +11,9 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desctop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

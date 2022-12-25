@@ -26,23 +26,6 @@
   }
 }
 
-
-.feedback-form__title {
-  margin: 0;
-  font-family: $accent-font;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 74px;
-    margin-bottom: 27px;
-    font-size: 21px;
-  }
-}
-
 .feedback-form__module {
   border-top: 1px solid #e5e5e5;
   padding-top: 24px;

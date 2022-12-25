@@ -1,6 +1,8 @@
 .main-navigation {
   align-self: center;
   position: absolute;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .main-navigation__wrapper {

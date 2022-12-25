@@ -1,28 +1,18 @@
 .welcome__logo {
-  background-image: url("../img/back-mobile.jpg");
+  background-image: url("../../img/back-mobile.jpg");
+  background-color: rgb(129, 179, 210);
+  background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: contain, cover;
-
-  @media (min-width: 768px) {
-    background-image: url("../../img/big.back-desktop.jpg");
-    height: 518px;
-  }
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  padding: 90px 19px 85px 19px;
+  background-size: cover;
 }
-
 
 .welcome__logo-image {
   display: block;
   margin: 0 auto;
-  padding-top: 90px;
-  padding-bottom: 85px;
-  /*.welcome__logo-image {
-  @media (min-width: 768px) {
-    width: 461px;
-    height: 153px;
-    padding-top: 77px;
-    padding-bottom: 91px;
-  }
-}*/
 }
 
 

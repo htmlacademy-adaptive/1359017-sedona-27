@@ -26,6 +26,7 @@
   &--white {
     background-color: #ffffff;
     color: #000000;
+    padding-left: 47px;
 
     @media (min-width: $tablet-width) {
       display: flex;
@@ -42,17 +43,6 @@
     background-color: #eeeeeeee;
     color: #000000;
     padding: 24px 18px 24px 18px;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: none;
-  }
-
-  &--house-icon::after {
-    content: url("../../img/icon-house-mob.svg");
   }
 }
 
@@ -123,6 +113,36 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  position: relative;
+
+  &--icon-house::after {
+    content: url("../../img/icon-house-mob.svg");
+    position: absolute;
+    top: 1px;
+    left: -52px;
+  }
+
+  &--icon-burger::after {
+    content: url("../../img/icon-burger-mob.svg.svg");
+    position: absolute;
+    top: 2px;
+    left: -52px;
+  }
+
+  &--icon-gift::after {
+    position: absolute;
+    content: url("../../img/icon-gift-mob.svg");
+    top: 1px;
+    left: -48px;
+
+    @media (min-width: $tablet-width) {
+      content: url("../../img/icon-gift-tabl.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      content: url("../../img/icon-gift-desk.svg");
+    }
+  }
 }
 
 .advantages__number,
@@ -139,17 +159,48 @@
   text-align: left;
   margin: 0;
   list-style-type: none;
-  padding: 23px 18px 52px 18px;
+  display: grid;
+  gap: 25px;
+  padding: 23px 20px;
+
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     grid-area: 2/1/3/4;
     display: flex;
     justify-content: center;
   }
 }
 
+.advantages__photo {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
 .advantages__photo-city {
   @media (min-width: $tablet-width) {
     grid-area: 1/2/2/4;
+    height: 256px;
+    max-width: 800px;
   }
 }
+
+.advantages__item-wrapper-extra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 256px;
+    padding: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 256px;
+    min-height: 256px;
+    padding: 43px 28px 44px;
+  }
+}
+

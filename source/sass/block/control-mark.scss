@@ -5,3 +5,47 @@
   line-height: 26px;
   color: #000000;
 }
+
+.control-mark-block {
+  position: relative;
+}
+
+.control-mark-block__mark {
+  position: absolute;
+  top: -11px;
+  left: -26px;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+
+  &--radio {
+    border-radius: 50%;
+  }
+
+  &--checkbox {
+    border-radius: 4px;
+  }
+}
+
+.control-mark-block__input:checked + .control-mark-block__mark--radio::before {
+  position: absolute;
+  content: " ";
+  width: 16px;
+  height: 16px;
+  top: 15px;
+  left: 15px;
+  border-radius: 50%;
+  background-color: #333333;
+  background-image: none;
+}
+
+.control-mark-block__input:checked + .control-mark-block__mark--checkbox::before {
+  position: absolute;
+  content: " ";
+  width: 22px;
+  height: 16px;
+  top: 15px;
+  left: 12px;
+  background-image: url("../../img/tick.svg");
+}
