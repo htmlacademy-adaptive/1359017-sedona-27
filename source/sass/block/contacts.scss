@@ -1,6 +1,10 @@
 .contacts-map__sedona {
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: $tablet-width;
     height: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }
