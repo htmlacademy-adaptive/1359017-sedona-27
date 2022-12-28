@@ -49,8 +49,8 @@
         <img class="welcome__logo-image" src="img/SEDONA.svg" alt="мини/лого">
       </div>
         <div class="welcome__wrapper">
-        <h1 class="welcome__title">Фото и видео</h1>
-        <p class="welcome__subtitle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+        <h1 class="welcome__title-catalog">Фото и видео</h1>
+        <p class="welcome__subtitle-catalog">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
         </p>
       </div>
       </section>
@@ -58,52 +58,90 @@
         <h2 class="visually-hidden">Галерея</h2>
         <ul class="photo-gallery__list">
           <li class="photo-gallery__item card-block card-block--one">
+            <a class="card-block__img-link" href="#">
+              <img class="card-block__img" src="img/road.jpg" alt="дорога" width="280" height="280">
+            </a>
             <div class="card-block__wrapper">
               <div class="card-block__wrapper-text">
             <h3 class="card-block__title">Неродные просторы</h3>
             <p class="card-block__author">Автор фото: Борис</p>
           </div>
-            <button class="card-block__like">1350</button>
+          <div class="card-block__wrapper-like">
+            <button class="card-block__like-button">
+              <span class="visually-hidden">Нравится</span>
+              <svg  class="card-block__like-icon"width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                </svg>
+                <p class="card-block__like-count">1350</p>
+            </button>
           </div>
-            <a class="card-block__img-link" href="#">
-              <img class="card-block__img" src="img/road.jpg" alt="дорога" width="280" height="280">
-            </a>
+
+          </div>
+
           </li>
           <li class="photo-gallery__item card-block">
+            <a class="card-block__img-link" href="#">
+              <img class="card-block__img" src="img/plant.jpg" alt="растение">
+            </a>
             <div class="card-block__wrapper">
               <div class="card-block__wrapper-text">
             <h3 class="card-block__title">Местная растительность</h3>
             <p class="card-block__author">Автор фото: Сергей </p>
               </div>
-            <button class="card-block__like">143</button>
+
+            <div class="card-block__wrapper-like">
+            <button class="card-block__like-button">
+              <span class="visually-hidden">Нравится</span>
+              <svg  class="card-block__like-icon"width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                </svg>
+                <p class="card-block__like-count">143</p>
+            </button>
+          </div>
             </div>
-            <a class="card-block__img-link" href="#">
-              <img class="card-block__img" src="img/plant.jpg" alt="растение">
-            </a>
+
           </li>
           <li class="photo-gallery__item card-block">
+            <a class="card-block__img-link" href="#">
+              <img class="card-block__img" src="img/the-road-intheforest.jpg" alt="дорога на север">
+            </a>
             <div class="card-block__wrapper">
               <div class="card-block__wrapper-text">
             <h3 class="card-block__title">Дорога на север</h3>
                   <p class="card-block__author">Автор фото: Петр</p>
                 </div>
-                  <button class="card-block__like">96</button>
+                <div class="card-block__wrapper-like">
+                  <button class="card-block__like-button">
+                    <span class="visually-hidden">Нравится</span>
+                    <svg  class="card-block__like-icon"width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                      </svg>
+                      <p class="card-block__like-count">96</p>
+                  </button>
+                </div>
             </div>
-                  <a class="card-block__img-link" href="#">
-                    <img class="card-block__img" src="img/the-road-intheforest.jpg" alt="дорога на север">
-                  </a>
+
           </li>
           <li class="photo-gallery__item card-block">
+            <a class="card-block__img-link" href="#">
+              <img class="card-block__img" src="img/rocks.jpg" alt="мост дьявола">
+            </a>
             <div class="card-block__wrapper">
               <div class="card-block__wrapper-text">
             <h3 class="card-block__title">Мост дьявола</h3>
                   <p class="card-block__author">Автор фото: Антон</p>
               </div>
-                  <button class="card-block__like">254</button>
+              <div class="card-block__wrapper-like">
+                <button class="card-block__like-button">
+                  <span class="visually-hidden">Нравится</span>
+                  <svg  class="card-block__like-icon"width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                    </svg>
+                    <p class="card-block__like-count">254</p>
+                </button>
+              </div>
             </div>
-                  <a class="card-block__img-link" href="#">
-                    <img class="card-block__img" src="img/rocks.jpg" alt="мост дьявола">
-                  </a>
+
           </li>
         </ul>
       </section>
