@@ -1,22 +1,26 @@
 .main-header {
-  width: 100%;
-  justify-content: center;
   position: relative;
   min-height: 56px;
+}
 
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    display: block;
-  }
+
+.logo {
+  position: relative;
+  z-index: 2;
+  width: 185px;
+  outline: none;
+  text-transform: uppercase;
+  color: #81b3d2;
 }
 
 .main-header__logo {
-  left: 50%;
-  justify-self: center;
   position: absolute;
+  top: 0;
+  left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
-    z-index: 2;
+    z-index: 3;
   }
 }

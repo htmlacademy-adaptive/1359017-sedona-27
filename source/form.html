@@ -15,6 +15,14 @@
         <nav class="main-navigation">
           <button class="main-navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
+            <svg class="main-navigation__icon  main-navigation__icon--burger" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+              <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+              <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+              </svg>
+            <svg class="main-navigation__icon   main-navigation__icon--cross" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z" fill="white"/>
+              </svg>
           </button>
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list site-list">
@@ -113,28 +121,28 @@
           <fieldset class="feedback-form__group feedback-form__group--attractions">
             <legend class="feedback-form__title feedback-form__title--attractions">Посещенные<br class="breaker breaker--on-on"> достопримечательности:</legend>
             <ul class="feedback-form__list feedback-form__list--attractions">
-              <li class="feedback-form__control-item control feedback-form__control-item--first">
+              <li class="feedback-form__control-item control feedback-form__control-item--first-place">
                 <label class="control__label">
                   <input class="control__input visually-hidden" type="checkbox" name="bridge-devil" checked="">
                   <span class="control__mark control__mark--checkbox"></span>
                   <span class="control__text">Мост Дьявола</span>
                 </label>
               </li>
-              <li class="feedback-form__control-item control feedback-form__control-item--second">
+              <li class="feedback-form__control-item control feedback-form__control-item--second-place">
                 <label class="control__label">
                   <input class="control__input visually-hidden" type="checkbox" name="mount-bell" checked="">
                   <span class="control__mark control__mark--checkbox"></span>
                   <span class="control__text">Гора-Колокол</span>
                 </label>
               </li>
-              <li class="feedback-form__control-item control feedback-form__control-item--third">
+              <li class="feedback-form__control-item control feedback-form__control-item--third-place">
                 <label class="control__label">
                   <input class="control__input visually-hidden" type="checkbox" name="slide-park" checked="">
                   <span class="control__mark control__mark--checkbox"></span>
                   <span class="control__text">Слайд-парк</span>
                 </label>
               </li>
-              <li class="feedback-form__control-item control feedback-form__control-item--fourth">
+              <li class="feedback-form__control-item control feedback-form__control-item--fourth-place">
                 <label class="control__label">
                   <input class="control__input visually-hidden" type="checkbox" name="red-rocks">
                   <span class="control__mark control__mark--checkbox"></span>
@@ -206,6 +214,7 @@
     </footer>
   </div>
 </div>
+<script src="js/script.js"></script>
   </body>
   </html>
 

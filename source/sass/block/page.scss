@@ -3,6 +3,18 @@
   height: 100%;
 }
 
+.page__body {
+  margin: 0 auto;
+  min-height: 100%;
+  font-family: $accent-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
 .page__container {
   width: 320px;
   min-height: 100%;
@@ -19,8 +31,4 @@
   @media (min-width: $desktop-width) {
     width: $desktop-width;
   }
-}
-
-.page__body {
-  margin: 0 auto;
 }

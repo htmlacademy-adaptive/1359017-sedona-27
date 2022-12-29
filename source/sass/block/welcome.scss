@@ -58,13 +58,13 @@
 
 .welcome__title-catalog {
   margin: 0;
-  padding: 0;
   font-family: $accent-font;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
+  padding: 0 20px 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -99,10 +99,6 @@
 .welcome__subtitle-catalog {
   text-transform: uppercase;
   text-align: center;
-  font-family: $accent-font;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
   color: #333333;
   margin: 0;
   padding: 0 0 37px;
