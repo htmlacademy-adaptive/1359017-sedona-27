@@ -114,7 +114,7 @@
 }
 
 .advantages__module {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding: 0 23px 60px;
   }
 }

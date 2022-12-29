@@ -1,19 +1,17 @@
-.control-mark-block__label {
+.control__label {
+  position: relative;
+  display: block;
+  padding-left: 62px;
   font-weight: 700;
-  font-family: $accent-font;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
 }
 
-.control-mark-block {
-  position: relative;
-}
-
-.control-mark-block__mark {
+.control__mark {
   position: absolute;
   top: -11px;
-  left: -26px;
+  left: 0;
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;
@@ -28,19 +26,19 @@
   }
 }
 
-.control-mark-block__input:checked + .control-mark-block__mark--radio::before {
+.control__input:checked + .control__mark--radio::before {
   position: absolute;
   content: " ";
+  background-color: #333333;
   width: 16px;
   height: 16px;
   top: 15px;
   left: 15px;
   border-radius: 50%;
-  background-color: #333333;
   background-image: none;
 }
 
-.control-mark-block__input:checked + .control-mark-block__mark--checkbox::before {
+.control__input:checked + .control__mark--checkbox::before {
   position: absolute;
   content: " ";
   width: 22px;
@@ -49,3 +47,4 @@
   left: 12px;
   background-image: url("../../img/tick.svg");
 }
+
