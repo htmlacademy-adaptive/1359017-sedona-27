@@ -1,11 +1,20 @@
 .welcome__logo {
-  background-image: url("../img/back-mobile.jpg");
+  background-image: url("../../img/back-mobile.jpg");
+  background-color: rgb(129, 179, 210);
+  background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: contain, cover;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  padding: 90px 19px 85px 19px;
+  background-size: cover;
 
-  @media (min-width: 768px) {
-    background-image: url("../../img/big.back-desktop.jpg");
-    height: 518px;
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/back-tablet.jpg.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/back-desktop-big.jpg.jpg");
   }
 }
 
@@ -13,16 +22,6 @@
 .welcome__logo-image {
   display: block;
   margin: 0 auto;
-  padding-top: 90px;
-  padding-bottom: 85px;
-  /*.welcome__logo-image {
-  @media (min-width: 768px) {
-    width: 461px;
-    height: 153px;
-    padding-top: 77px;
-    padding-bottom: 91px;
-  }
-}*/
 }
 
 
@@ -51,6 +50,30 @@
     padding-top: 49px;
     padding-bottom: 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 61px;
+  }
+}
+
+.welcome__title-catalog {
+  margin: 0;
+  font-family: $accent-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 0 20px 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding: 28px 20px 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 20px 32px;
+  }
 }
 
 .welcome__subtitle {
@@ -67,9 +90,30 @@
     line-height: 24px;
     padding-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 43px;
+  }
+}
+
+.welcome__subtitle-catalog {
+  text-transform: uppercase;
+  text-align: center;
+  color: #333333;
+  margin: 0;
+  padding: 0 0 37px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 18px 81px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 18px 89px;
+  }
 }
 
 .welcome__wrapper {
   padding: 36px 20px 28px 20px;
   text-align: center;
 }
+

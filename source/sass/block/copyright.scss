@@ -1,5 +1,5 @@
 .copyright {
-  display: flex;
+  margin-bottom: 22px;
 }
 
 .copyright__text {
@@ -11,3 +11,10 @@
   line-height: 24px;
   text-transform: uppercase;
 }
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+

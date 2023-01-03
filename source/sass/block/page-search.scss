@@ -1,4 +1,6 @@
 .page-search {
+  margin: 0;
+  padding: 39px 18px 49px;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -7,6 +9,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 61px;
     padding-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 66px;
   }
 }
 
@@ -41,11 +47,8 @@
 
 .page-search__button {
   width: 284px;
-  font-family: $accent-font;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  padding: 16px 0 16px 0;
-  margin: 0 18px 49px 18px;
+
+  @media (min-width: 768px) {
+    width: 458px;
+  }
 }
