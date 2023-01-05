@@ -19,4 +19,16 @@
   height: 48px;
   text-align: center;
   background-color: #81b3d2;
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+}
+
+.social__link-svg:active {
+  opacity: 0.3;
 }
