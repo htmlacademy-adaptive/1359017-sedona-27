@@ -1,11 +1,57 @@
-.contacts-map__sedona {
+.contacts {
+  position: relative;
+  background-image: url("../../img/map-mobile.jpg.png");
+  width: 320px;
+  height: 350px;
+  background-size: 320px 350px;
+  max-width: 100%;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/map-mobile.jpg@2x.png");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background-image: url("../../img/map-marker.svg.svg");
+    background-repeat: no-repeat;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+  }
+
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
-    height: 350px;
+    background-image: url("../../img/map-tablet.jpg.png");
+    width: 768px;
+    background-size: 768px 350px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/map-tablet.jpg@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    width: 1200px;
+    background-image: url("../../img/map-desktop.jpg.png");
+    background-size: 1200px 350px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/map-desktop.jpg@2x.png");
+    }
   }
 }
 
+.contacts__map-sedona {
+  border: 0;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}

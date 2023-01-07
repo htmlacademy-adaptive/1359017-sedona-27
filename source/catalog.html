@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
@@ -53,8 +56,13 @@
 
     <main class="main-container">
       <section class="welcome">
-        <div class="welcome__logo">
-        <img class="welcome__logo-image" src="img/SEDONA.svg" alt="мини/лого">
+        <div class="welcome__logo welcome__logo__block welcome__logo__catalog">
+          <picture>
+            <source media="(min-width: 1200px)" width="460" height="80" srcset="../img/text-sedona.des.svg.svg">
+            <source media="(min-width: 768px)" width="457" height="78" srcset="../img/SEDONA-tab.svg">
+            <img class="welcome__logo-image-catalog" src="img/SEDONA.svg" alt="мини/лого" width="229" height="39">
+          </picture>
+
       </div>
         <div class="welcome__wrapper">
         <h1 class="welcome__title-catalog">Фото и видео</h1>
@@ -68,9 +76,9 @@
           <li class="photo-gallery__item card-block card-block--one">
             <a class="card-block__img-link" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="../img/road.desktop.jpg">
-                <source media="(min-width: 768px)" srcset="../img/road.tablet.jpg">
-              <img class="card-block__img" src="img/road.jpg" alt="дорога" width="280" height="280">
+                <source media="(min-width: 1200px)" srcset="../img/road.desktop.jpg 1x, ../img/photo.desktop.jpg@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="../img/road.tablet.jpg 1x, ../img/photo.road-tabl 1@2x.jpg 2x">
+              <img class="card-block__img" src="img/road.jpg" srcset="../img/photo.road.mobile.jpg@2x.jpg" alt="дорога" width="280" height="280">
             </picture>
             </a>
             <div class="card-block__wrapper">
@@ -94,9 +102,9 @@
           <li class="photo-gallery__item card-block">
             <a class="card-block__img-link" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="../img/plant.desktop.jpg">
-                <source media="(min-width: 768px)" srcset="../img/plant-tablet.jpg">
-              <img class="card-block__img" src="img/plant.jpg" alt="растение">
+                <source media="(min-width: 1200px)" srcset="../img/plant.desktop.jpg 1x, ../img/photo-2plant.desktop.jpg@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="../img/plant-tablet.jpg 1x, ../img/photo-2plant.tab 1@2x.jpg 2x">
+              <img class="card-block__img" src="img/plant.jpg" srcset="../img/photo-2plant.mobile.jpg@2x.jpg" alt="растение">
             </picture>
             </a>
             <div class="card-block__wrapper">
@@ -120,9 +128,9 @@
           <li class="photo-gallery__item card-block">
             <a class="card-block__img-link" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="../img/road-intheforest.desktop.jpg">
-                <source media="(min-width: 768px)" srcset="../img/road-intheforest-tablet.jpg">
-              <img class="card-block__img" src="img/the-road-intheforest.jpg" alt="дорога на север">
+                <source media="(min-width: 1200px)" srcset="../img/road-intheforest.desktop.jpg 1x, ../img/photo-3intheforestdesktop.jpg@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="../img/road-intheforest-tablet.jpg 1x, ../img/photo-3-tabl.intheforest 1@2x.jpg 2x">
+              <img class="card-block__img" src="img/the-road-intheforest.jpg" srcset="source/img/photo-3roadintheforest.mobile.jpg@2x.jpg" alt="дорога на север">
               </picture>
             </a>
             <div class="card-block__wrapper">
@@ -145,9 +153,9 @@
           <li class="photo-gallery__item card-block">
             <a class="card-block__img-link" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="../img/rocks.desktop.jpg">
-                <source media="(min-width: 768px)" srcset="../img/rocks-tablet.jpg">
-              <img class="card-block__img" src="img/rocks.jpg" alt="мост дьявола">
+                <source media="(min-width: 1200px)" srcset="../img/rocks.desktop.jpg 1x, ../img/photo-4rocksdesktop.jpg@2x.jpg">
+                <source media="(min-width: 768px)" srcset="../img/rocks-tablet.jpg 1x, ../img/photo-4rocks.tabl 2@2x.jpg 2x">
+              <img class="card-block__img" src="img/rocks.jpg" srcset="../img/photo-4-rocks.mob 1@2x.jpg" alt="мост дьявола">
               </picture>
             </a>
             <div class="card-block__wrapper">
@@ -172,7 +180,16 @@
       <section class="video-presentation">
         <h1 class="video-presentation__title">Все еще сомневаетесь?</h1>
             <p class="video-presentation__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <img class="video-presentation__video" src="img/video-mobile.jpg" alt="видео" width="280" height="177">
+            <div class="video-presentation__wrapper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="../img/video-desktop.jpg.jpg 1x, ../img/video-desktop.jpg@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="source/img/video-tab .jpg 1x, ../img/video-tab1@2x.jpg 2x">
+            <img class="video-presentation__video" src="img/video-mobile.jpg" srcset="../img/video-mobile.jpg2x.jpg" alt="видео" width="280" height="177">
+          </picture>
+          <svg class="video-presentation__icon" width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7"/>
+            </svg>
+          </div>
       </section>
     </main>
     <footer class="main-footer">
