@@ -32,6 +32,11 @@
   text-transform: uppercase;
   margin-left: 27px;
   margin-right: 27px;
+
+  @media (min-width: $tablet-width) {
+    width: 445px;
+    margin-bottom: 66px;
+  }
 }
 
 .video-presentation__video {
@@ -49,4 +54,15 @@
     width: 800px;
     height: 500px;
   }
+}
+
+.video-presentation__wrapper {
+  position: relative;
+}
+
+.video-presentation__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
