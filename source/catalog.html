@@ -6,7 +6,7 @@
     <link rel="icon" href="../favicon.ico">
     <link rel="icon" type="image/png" href="../img/favicon/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
@@ -66,7 +66,7 @@
       </div>
         <div class="welcome__wrapper">
         <h1 class="welcome__title-catalog">Фото и видео</h1>
-        <p class="welcome__subtitle-catalog">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+        <p class="welcome__subtitle-catalog">Не можете решиться на путешествие <br> из-за курса? Фотографии помогут вам <br> забыть о политике и экономике.
         </p>
       </div>
       </section>
@@ -76,6 +76,9 @@
           <li class="photo-gallery__item card-block card-block--one">
             <a class="card-block__img-link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="../img/road.desktop.webp 1x, ../img/photo.desktop.jpg@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="../img/road.tablet.webp 1x, ../img/photo.road-tabl 1@2x.webp 2x">
+                <source type="image/webp" srcset="img/road.webp 1x, ../img/photo.road.mobile.jpg@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="../img/road.desktop.jpg 1x, ../img/photo.desktop.jpg@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="../img/road.tablet.jpg 1x, ../img/photo.road-tabl 1@2x.jpg 2x">
               <img class="card-block__img" src="img/road.jpg" srcset="../img/photo.road.mobile.jpg@2x.jpg" alt="дорога" width="280" height="280">
@@ -90,7 +93,7 @@
             <button class="card-block__like-button">
               <span class="visually-hidden">Нравится</span>
               <svg  class="card-block__like-icon"width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                <path  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
                 </svg>
                 <p class="card-block__like-count">1350</p>
             </button>
@@ -102,6 +105,9 @@
           <li class="photo-gallery__item card-block">
             <a class="card-block__img-link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="../img/plant.desktop.webp 1x, ../img/photo-2plant.desktop.jpg@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="../img/plant-tablet.webp 1x, ../img/photo-2plant.tab 1@2x.webp 2x">
+                <source type="image/webp" srcset="img/plant.webp 1x, ../img/photo-2plant.mobile.jpg@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="../img/plant.desktop.jpg 1x, ../img/photo-2plant.desktop.jpg@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="../img/plant-tablet.jpg 1x, ../img/photo-2plant.tab 1@2x.jpg 2x">
               <img class="card-block__img" src="img/plant.jpg" srcset="../img/photo-2plant.mobile.jpg@2x.jpg" alt="растение">
@@ -117,7 +123,7 @@
             <button class="card-block__like-button">
               <span class="visually-hidden">Нравится</span>
               <svg  class="card-block__like-icon"width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
                 </svg>
                 <p class="card-block__like-count">143</p>
             </button>
@@ -128,9 +134,12 @@
           <li class="photo-gallery__item card-block">
             <a class="card-block__img-link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="../img/road-intheforest.desktop.webp 1x, ../img/photo-3intheforestdesktop.jpg@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="../img/road-intheforest-tablet.webp 1x, ../img/photo-3-tabl.intheforest 1@2x.webp 2x">
+                <source type="image/webp" srcset="img/the-road-intheforest.webp 1x, ../img/photo-3roadintheforest.mobile.jpg@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="../img/road-intheforest.desktop.jpg 1x, ../img/photo-3intheforestdesktop.jpg@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="../img/road-intheforest-tablet.jpg 1x, ../img/photo-3-tabl.intheforest 1@2x.jpg 2x">
-              <img class="card-block__img" src="img/the-road-intheforest.jpg" srcset="source/img/photo-3roadintheforest.mobile.jpg@2x.jpg" alt="дорога на север">
+              <img class="card-block__img" src="img/the-road-intheforest.jpg" srcset="../img/photo-3roadintheforest.mobile.jpg@2x.jpg" alt="дорога на север">
               </picture>
             </a>
             <div class="card-block__wrapper">
@@ -142,7 +151,7 @@
                   <button class="card-block__like-button">
                     <span class="visually-hidden">Нравится</span>
                     <svg  class="card-block__like-icon"width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                      <path  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
                       </svg>
                       <p class="card-block__like-count">96</p>
                   </button>
@@ -153,6 +162,9 @@
           <li class="photo-gallery__item card-block">
             <a class="card-block__img-link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="../img/rocks.desktop.webp 1x, ../img/photo-4rocksdesktop.jpg@2x.webp">
+                <source type="image/webp" media="(min-width: 768px)" srcset="../img/rocks-tablet.webp 1x, ../img/photo-4rocks.tabl 2@2x.webp 2x">
+                <source type="image/webp" srcset="img/rocks.webp 1x, ../img/photo-4-rocks.mob 1@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="../img/rocks.desktop.jpg 1x, ../img/photo-4rocksdesktop.jpg@2x.jpg">
                 <source media="(min-width: 768px)" srcset="../img/rocks-tablet.jpg 1x, ../img/photo-4rocks.tabl 2@2x.jpg 2x">
               <img class="card-block__img" src="img/rocks.jpg" srcset="../img/photo-4-rocks.mob 1@2x.jpg" alt="мост дьявола">
@@ -167,7 +179,7 @@
                 <button class="card-block__like-button">
                   <span class="visually-hidden">Нравится</span>
                   <svg  class="card-block__like-icon"width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
                     </svg>
                     <p class="card-block__like-count">254</p>
                 </button>
@@ -182,8 +194,11 @@
             <p class="video-presentation__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             <div class="video-presentation__wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="../img/video-desktop.jpg.webp 1x, ../img/video-desktop.jpg@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="../img/video-tab .webp 1x, ../img/video-tab1@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile.webp 1x, ../img/video-mobile.jpg2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="../img/video-desktop.jpg.jpg 1x, ../img/video-desktop.jpg@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="source/img/video-tab .jpg 1x, ../img/video-tab1@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="../img/video-tab .jpg 1x, ../img/video-tab1@2x.jpg 2x">
             <img class="video-presentation__video" src="img/video-mobile.jpg" srcset="../img/video-mobile.jpg2x.jpg" alt="видео" width="280" height="177">
           </picture>
           <svg class="video-presentation__icon" width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">

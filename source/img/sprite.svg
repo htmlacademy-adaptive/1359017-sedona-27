@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="icon-menu-burger">
+    <g>
+      <path d="M22.9 0H0V4H22.9V0Z"/>
+      <path d="M22.9 9H0V13H22.9V9Z"/>
+      <path d="M22.9 18H0V22H22.9V18Z"/>
+    </g>
+  </symbol>
+  </svg>
