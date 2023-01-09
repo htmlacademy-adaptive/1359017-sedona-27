@@ -1,5 +1,6 @@
 .copyright {
   margin-bottom: 22px;
+  margin-top: -18px;
 }
 
 .copyright__text {
@@ -16,6 +17,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+  padding-right: 16px;
 
   &:hover .copyright__text,
   &:hover .copyright__icon {

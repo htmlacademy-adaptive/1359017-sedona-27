@@ -55,7 +55,7 @@
   margin: 0 0 28px 0;
   text-align: center;
 
-  @media (min-width: $accent-font) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 47px;
   }
 }

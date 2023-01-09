@@ -62,8 +62,8 @@
 }
 
 .welcome__logo__block {
-  padding-top: 52px;
-  padding-bottom: 67px;
+  padding-top: 49px;
+  padding-bottom: 64px;
 
   @media (min-width: $tablet-width) {
     padding-top: 95px;
@@ -105,8 +105,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
-    padding-top: 49px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -122,7 +122,7 @@
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
-  padding: 0 20px 25px;
+  padding: 35px 20px 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -135,18 +135,21 @@
 }
 
 .welcome__subtitle {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 0 18px;
   padding-bottom: 32px;
   font-weight: 400;
   font-family: $accent-font;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  width: 285px;
+
 
   @media (min-width: $tablet-width) {
     line-height: 24px;
     padding-bottom: 55px;
+    width: 520px;
   }
 
   @media (min-width: $desktop-width) {
@@ -159,7 +162,7 @@
   text-align: center;
   color: #333333;
   margin: 0;
-  padding: 0 0 37px;
+  padding: 0 0 0;
 
   @media (min-width: $tablet-width) {
     padding: 0 18px 81px;
@@ -171,6 +174,5 @@
 }
 
 .welcome__wrapper {
-  padding: 36px 20px 28px 20px;
   text-align: center;
 }

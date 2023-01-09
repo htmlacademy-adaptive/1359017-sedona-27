@@ -11,7 +11,7 @@
 .main-navigation__toggle {
   display: block;
   background-color: transparent;
-  margin: 9px 12px;
+  margin: 14px 14px;
   z-index: 3;
   border: none;
   position: absolute;
@@ -22,7 +22,9 @@
 }
 
 .main-navigation__icon {
-  fill: #81b3d2;
+  &--burger {
+    fill: #81b3d2;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
