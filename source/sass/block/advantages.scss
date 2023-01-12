@@ -63,7 +63,7 @@
       position: absolute;
       content: url("../../img/white-copy2.svg");
       left: 0;
-      top: -1px;
+      top: -13px;
     }
   }
 
@@ -133,7 +133,8 @@
 .advantages__index__wrapper {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  width: 289px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 256px;
@@ -168,7 +169,7 @@
 
 .advantages__index__description {
   margin: 0;
-  padding: 0 23px 36px;
+  padding: 0 0px 36px;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
@@ -251,8 +252,8 @@
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
-    left: -52px;
-    top: 0;
+    left: -45px;
+    top: 1px;
 
     @media (min-width: $tablet-width) {
       width: 77px;
@@ -266,7 +267,7 @@
       width: 80px;
       height: 72px;
       top: 69px;
-      left: 156px;
+      left: 136px;
       background-image: url("../../img/icon-house-desk.svg");
     }
   }
@@ -278,8 +279,8 @@
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
-    left: -52px;
-    top: 0;
+    left: -46px;
+    top: 2px;
 
     @media (min-width: $tablet-width) {
       width: 80px;
@@ -292,8 +293,8 @@
     @media (min-width: $desktop-width) {
       width: 73px;
       height: 69px;
-      top: 69px;
-      left: 156px;
+      top: 73px;
+      left: 138px;
       background-image: url("../../img/icon-burger-desk.svg");
     }
   }
@@ -305,7 +306,7 @@
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
-    left: -52px;
+    left: -42px;
     top: 0;
 
     @media (min-width: $tablet-width) {
@@ -320,7 +321,7 @@
       width: 77px;
       height: 75px;
       top: 69px;
-      left: 156px;
+      left: 136px;
       background-image: url("../../img/icon-gift-desk.svg");
     }
   }
@@ -367,6 +368,21 @@
   flex-direction: column;
   justify-content: center;
   padding: 26px;
+  width: 289px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    min-height: 256px;
+    padding: 43px 28px 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    padding: 63px 28px 44px;
+    justify-content: flex-start;
+  }
+
 }
 
 .advantages__title-feature {
@@ -378,6 +394,14 @@
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+
+  @media (min-width:$tablet-width) {
+    font-size: 21px;
+  }
+
+  @media (min-width:$desktop-width) {
+
+  }
 }
 
 .advantage__description-feature {

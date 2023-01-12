@@ -1,23 +1,33 @@
 .copyright {
+  margin-top: 34px;
   margin-bottom: 22px;
-  margin-top: -18px;
+
+  @media (min-width:$tablet-width){
+    margin-right: -21px;
+    margin-top: -1px;
+  }
+
+  @media (min-width:$desktop-width) {
+      margin-top: -7px;
+      margin-right: 39px;
+  }
 }
 
 .copyright__text {
-  width: 121px;
+  //width: 121px;
   text-align: center;
   font-family: $accent-font;
   color: #000000;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0 12px 0 0;
 }
 
 .copyright__link {
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding-right: 16px;
 
   &:hover .copyright__text,
   &:hover .copyright__icon {

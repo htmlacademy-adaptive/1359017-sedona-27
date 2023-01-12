@@ -8,7 +8,7 @@
   z-index: 0;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 17px;
+  margin-bottom: -4px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/map-mobile.jpg@2x.png");
@@ -31,6 +31,7 @@
     background-image: url("../../img/map-tablet.jpg.png");
     width: 768px;
     background-size: 768px 350px;
+    margin:0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/map-tablet.jpg@2x.png");
