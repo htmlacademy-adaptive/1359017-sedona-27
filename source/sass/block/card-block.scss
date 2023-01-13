@@ -1,64 +1,121 @@
 .card-block {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 9px 20px;
+  display: grid;
+  grid-template-columns: 280px;
+  grid-template-rows: 280px auto auto;
+  grid-row-gap: 11px;
+  padding-top: 24px;
+  padding-bottom: 15px;
   border-top: 1px solid #e5e5e5;
 
+  &::after {
+    position: absolute;
+    content: "";
+    left: -20px;
+    bottom: 0;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    z-index: 3;
+  }
+
+  &--one {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 0;
-    border-top: none;
+    grid-template-columns: 324px;
+    grid-template-rows: 267px auto;
+    grid-row-gap: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 
     &--one {
-      grid-column-start: 1;
-      grid-column-end: -1;
+      .card-block__img {
+        width: 648px;
+        height: 400px;
+      }
+
+      .card-block__wrapper {
+        padding: 22px 20px 11px 21px;
+      }
+      grid-template-columns: 648px;
+      grid-template-rows: 400px auto;
     }
-  }
+
+    &::after {
+      display: none;
+    }
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 400px;
+      grid-row-gap: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      &--one {
+        .card-block__img {
+          width: 1200px;
+          height: 400px;
+        }
+
+        .card-block__wrapper {
+          padding: 22px 20px 11px 21px;
+        }
+
+        .card-block__wrapper-like{
+          padding-top: 6px;
+        }
+
+        .card-block__author {
+          padding-top: 1px;
+        }
+        grid-template-columns: 1200px;
+        grid-template-rows: 400px auto;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
 }
 
-.card-block__img-link {
-  display: block;
-  margin-bottom: 15px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23px;
-  text-decoration: none;
-  color: #000000;
-  overflow: hidden;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
-}
 
 .card-block__img {
-  display: block;
-  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  width: 280px;
   height: 280px;
-  background-color: #eeeeee;
-  object-fit: cover;
 
   @media (min-width: $tablet-width) {
+    height: 267px;
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
     height: 267px;
   }
 }
 
-.card-block--one .card-block__img {
-  @media (min-width: $tablet-width) {
-    height: 400px;
-  }
-}
-
 .card-block__wrapper {
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    min-height: 80px;
-    padding: 22px 20px 15px;
     background-color: #f2f2f2;
+    padding: 22px 20px 15px 20px;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: -80px;
+    padding: 18px 20px 15px 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,14 +128,29 @@
   }
 }
 
+.card-block__wrapper-text {
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
 .card-block__title {
   margin: 0;
-  font-family: $accent-font;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #000000;
+  color: #000;
   padding-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
@@ -87,17 +159,34 @@
 }
 
 .card-block__author {
-  margin: 0;
+  margin: 1px;
   padding-top: 1px;
-  margin-bottom: 11px;
+  margin-bottom: 7px;
   font-family: $accent-font;
   font-weight: 400;
+  margin: 0;
+  padding-top: 1px;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+    padding-top: 4px;
+  }
 }
 
 .card-block__wrapper-like {
-  display: flex;
-  flex-direction: row;
-  margin-top: 9px;
+  display: grid;
+  grid-template-columns: 23px auto;
+  grid-template-rows: auto;
+  grid-column-gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 6px;
+    grid-column-gap: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+  }
 }
 
 .card-block__like-button {
@@ -130,5 +219,5 @@
   line-height: 21px;
   text-transform: uppercase;
   padding-top: 3px;
-  padding-bottom: 22px;
+  //padding-bottom: 22px;
 }

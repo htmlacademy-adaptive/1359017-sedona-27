@@ -1,35 +1,45 @@
 .copyright {
+  margin-top: 34px;
   margin-bottom: 22px;
-  margin-top: -18px;
+
+  @media (min-width:$tablet-width){
+    margin: 7px 0 0;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin: 7px 0 0;
+  }
 }
 
 .copyright__text {
-  width: 121px;
+  //width: 121px;
   text-align: center;
   font-family: $accent-font;
   color: #000000;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0 12px 0 0;
 }
 
 .copyright__link {
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding-right: 16px;
 
   &:hover .copyright__text,
   &:hover .copyright__icon {
     color: #81b3d2;
+    fill: #81b3d2;
   }
 
   &:active .copyright__text,
   &:active .copyright__icon {
     color: #b3b3b3;
+    fill :#b3b3b3;
   }
 }
 
 .copyright__icon {
-  color: #000000;
+  fill: #000000;
 }
