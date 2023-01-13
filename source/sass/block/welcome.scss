@@ -67,13 +67,13 @@
   padding-bottom: 64px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 95px;
+    padding-top: 87px;
     padding-bottom: 117px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 101px;
-    padding-bottom: 120px;
+    padding-top: 97px;
+    padding-bottom: 117px;
   }
 }
 
@@ -171,48 +171,27 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 18px 81px;
+    width: 520px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 18px 89px;
+
   }
 }
 
 .welcome__wrapper {
   text-align: center;
-}
 
-
-
-.breaker {
-  display: none;
-
-  &--tab {
+  &--catalog {
     @media (min-width: $tablet-width) {
-      display: inline;
-    }
-    @media (min-width: 1200px) {
-      display: none;
-    }
-  }
-  &--desk {
 
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-    @media (min-width: 1200px) {
-      display: inline;
-    }
-
-  }
-  &--all {
-    @media (min-width: $tablet-width) {
-    display:inline
-    }
-    @media (min-width: 1200px) {
-      display: inline;
     }
   }
 }
+
+
+
+
 
 

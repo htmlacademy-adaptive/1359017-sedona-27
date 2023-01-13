@@ -2,6 +2,7 @@
   padding:0;
 }
 
+
 .main-footer__hashtag {
   margin-top: 39px;
   margin-bottom: 32px;
@@ -41,9 +42,13 @@
     flex-direction: row;
     align-items: normal;
     justify-content: space-between;
+
+    &--index {
+      padding-right: 60px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top:14px;
+    padding-right: 135px;
   }
 }

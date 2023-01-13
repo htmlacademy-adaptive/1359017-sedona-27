@@ -3,13 +3,11 @@
   margin-bottom: 22px;
 
   @media (min-width:$tablet-width){
-    margin-right: -21px;
-    margin-top: -1px;
+    margin: 7px 0 0;
   }
 
   @media (min-width:$desktop-width) {
-      margin-top: -7px;
-      margin-right: 39px;
+    margin: 7px 0 0;
   }
 }
 
@@ -32,14 +30,16 @@
   &:hover .copyright__text,
   &:hover .copyright__icon {
     color: #81b3d2;
+    fill: #81b3d2;
   }
 
   &:active .copyright__text,
   &:active .copyright__icon {
     color: #b3b3b3;
+    fill :#b3b3b3;
   }
 }
 
 .copyright__icon {
-  color: #000000;
+  fill: #000000;
 }

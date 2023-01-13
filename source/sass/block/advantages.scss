@@ -69,6 +69,7 @@
 
   &--grey {
     background-color: #eeeeee;
+
   }
 
   @media (min-width: $tablet-width) {
@@ -381,6 +382,10 @@
     width: 400px;
     padding: 63px 28px 44px;
     justify-content: flex-start;
+
+    &--add {
+      padding-top:52px;
+    }
   }
 
 }

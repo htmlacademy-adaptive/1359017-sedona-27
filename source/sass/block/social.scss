@@ -1,5 +1,9 @@
 .social {
   width: 156px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 22px 0 0;
+}
 }
 .social__list {
   margin: 0;
@@ -38,13 +42,20 @@
 
   &:active {
     background-color: #5496bd;
+
+    .social__link-svg {
+      opacity: 0.3;
+    }
   }
 
   &:hover {
-    background-color: #669ec0;
+      background-color: #669ec0;
   }
 }
 
-.social__link-svg:active {
-  opacity: 0.3;
+
+
+
+.social__link-svg {
+  fill:#ffff
 }

@@ -25,6 +25,9 @@
   &--burger {
     fill: #81b3d2;
   }
+  &--cross {
+    fill:#ffffff
+  }
 }
 
 @media (max-width: $mobile-width-only) {
