@@ -63,9 +63,13 @@
 }
 
 
-.main-avigation--nojs .main-avigation__wrapper {
+.main-avigation--nojs .main-navigation__wrapper {
   position: static;
   display: block;
+}
+
+.main-navigation--opened .main-navigation__icon--burger {
+  display: none;
 }
 
 
