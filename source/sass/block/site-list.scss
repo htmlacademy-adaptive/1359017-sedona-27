@@ -29,6 +29,15 @@
     &:nth-child(3) {
       grid-column-start: 4;
     }
+
+    &:last-child::after {
+      display: none;
+    }
+
+
+    &:nth-child(7) {
+      grid-column-start: 4;
+    }
   }
 }
 
