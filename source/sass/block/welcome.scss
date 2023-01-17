@@ -16,6 +16,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/intro-triangletab.svg"), url("../../img/back-tablet.jpg.jpg");
+    padding: 84px 19px 91px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/intro-triangletab.svg"), url("../../img/back-tabl.jpg@2x.jpg");
@@ -32,7 +33,7 @@
   }
 }
 
-.welcome__logo__catalog {
+.welcome__logo-catalog {
   background-image: url("../../img/intro-triangle.svg.svg"), url("../../img/backr-mob.cat.jpg.jpg");
   background-color: #81b3d2;
   background-position: center bottom;
