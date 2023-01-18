@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" type="image/png" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <base href="https://htmlacademy-adaptive.github.io/1359017-sedona-27/12/">
+</head>
+  <body class="page__body">
+    <div class="page__container">
+    <header class="main-header">
+      <a class="main-header__logo logo">
+        <img src="img/logo.svg" alt="лого" width="185" height="96">
+      </a>
+      <nav class="main-navigation main-navigation--opened">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg class="main-navigation__icon  main-navigation__icon--burger" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+            <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+            <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+            </svg>
+            <svg class="main-navigation__icon   main-navigation__icon--cross" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z" fill="white"/>
+              </svg>
+
+        </button>
+        <div class=" main-navigation__wrapper">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active" href="">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container__welcome welcome">
+      <section class="welcome__index welcome__index-banner">
+        <div class="welcome__logo  welcome__logo__index">
+          <picture>
+            <source media="(min-width: 1200px)" width="460" height="350" srcset="../img/text-index-desktop.svg">
+            <source media="(min-width: 768px)" width="461" height="350" srcset="../img/text-index-tablet.svg">
+          <img class="welcome__logo-image" src="img/text-index.svg" alt="приветственное лого" width="282" height="214">
+        </picture>
+        </div>
+        <div class="welcome__wrapper">
+        <h1 class="welcome__title">Седона — небольшой городок в Аризоне,<br class="breaker breaker--all">  заслуживающий большего!</h1>
+        <p class="welcome__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
+      </section>
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__index advantages__item--first">
+              <div class="advantages__index__wrapper">
+                <h3 class="advantages__index__title">Настоящий <br class="breaker breaker--desk">городок</h3>
+                <p class="advantages__number advantages__number--color">— №1 —</p>
+                <p class="advantages__index__description">Седона не аттракцион для туристов, <br class="breaker breaker--desk">там течет своя<br class=" breaker breaker--tab"> жизнь</p>
+              </div>
+              <div class="advantages__index__picture-wrapper">
+                <picture>
+
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="../img/photo-city@1xdesktop.webp 1x, ../img/photo-citydeskt@1x@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="../img/photo-city@tablet1x.webp 1x, ../img/photo-city@1x@2x.webp 2x">
+          <source type="image/webp" srcset="img/Photo-Hotel.webp 1x, ../img/photo-citymob@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="../img/photo-city@1xdesktop.jpg 1x, ../img/photo-citydeskt@1x@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="../img/photo-city@tablet1x.jpg 1x, ../img/photo-city@1x@2x.jpg 2x">
+                <img class="advantages__photo advantages__photo--city" src="img/Photo-Hotel.jpg"  srcset="../img/photo-citymob@2x.jpg 2x" alt="фото вид отеля" width="320" height="260">
+              </picture>
+              </div>
+              <ul class="advantages__sublist">
+                <li class="advantages__subitem advantages__subitem-white">
+                  <div class="advantages__module">
+                    <h3 class="advantages__subtitle advantages__subtitle--icon-house">Жилье</h3>
+                    <p class="advantages__subdescription">Рекомендуем пожить в <br class="breaker breaker--tab"> настоящем<br class="breaker breaker--desk"> мотеле, все <br class="breaker breaker--tab">как в кино!</p>
+                  </div>
+                </li>
+                <li class="advantages__subitem advantages__subitem-white">
+                  <div class="advantages__module">
+                    <h3 class="advantages__subtitle advantages__subtitle--icon-burger">Еда</h3>
+                    <p class="advantages__subdescription">Всегда заказывайте фирменный бургер,<br class="breaker breaker--all"> вы не разочаруетесь!</p>
+                  </div>
+                </li>
+                <li class="advantages__subitem advantages__subitem-white">
+                  <div class="advantages__module">
+                    <h3 class="advantages__subtitle advantages__subtitle--icon-present">Сувениры</h3>
+                    <p class="advantages__subdescription">Не только китайского, <br class="breaker breaker--all">но и местного производства!</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="advantages__item advantages__index advantages__item--second">
+              <div class="advantages__index__wrapper advantages__index__wrapper--change-block">
+                <h3 class="advantages__index__title">Там есть <br class="breaker breaker--all"> мост дьявола</h3>
+                <p class="advantages__number advantages__number--color">— №2 —</p>
+                <p class="advantages__index__description">Да, по нему можно <br class=" breaker breaker--tab">  пройти! <br class="breaker breaker--desk">Если вы<br class=" breaker breaker--tab"> осмелитесь, конечно</p>
+              </div>
+              <div class="advantages__index__picture-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="../img/photo-bridge@1xdesktop.webp 1x, ../img/photo-bridgeDeskt@1x@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset=" ../img/photo-bridgetablet@1x.webp 1x, ../img/photo-bridgetab@1x@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="../img/photo-bridge@1xdesktop.jpg 1x, ../img/photo-bridgeDeskt@1x@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="../img/photo-bridgetablet@1x.jpg 1x, ../img/photo-bridgetab@1x@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/photo-bridge.mob.webp 1x, ../img/photo-bridgemob@1x1@2x.webp 2x">
+                  <img class="advantages__photo advantages__photo--canyon" src="img/photo-bridge.mob.jpg" srcset="../img/photo-bridgemob@1x1@2x.jpg" alt="фото моста" width="320" height="260">
+                </picture>
+              </div>
+            </li>
+            <li class="advantages__item  advantages__item--grey advantages__item--third">
+              <div class="advantages__item-wrapper-extra">
+                <h3 class="advantages__title-feature">Небольшая <br class="breaker breaker--all"> площадь</h3>
+                <p class="advantages__number">— №3 —</p>
+                <p class="advantage__description-feature">Все интересные места находятся очень <br class="breaker breaker--desk"> близко</p>
+              </div>
+            </li>
+            <li class="advantages__item advantages__item--grey  advantages__item--fourth">
+              <div class="advantages__item-wrapper-extra advantages__item-wrapper-extra--add">
+                <h3 class="advantages__title-feature">Красивая <br class="breaker breaker--all">дорога</h3>
+                <p class="advantages__number">— №4 —</p>
+                <p class="advantage__description-feature">Ехать в Седону из Лас-<br class="breaker breaker--tab">Вегаса   совсем<br class="breaker breaker--all"> не скучно!</p>
+              </div>
+            </li>
+            <li class="advantages__item advantages__item--grey  advantages__item--fifth">
+              <div class="advantages__item-wrapper-extra">
+                <h3 class="advantages__title-feature">Мало <br class="breaker breaker--all"> туристов</h3>
+                <p class="advantages__number">— №5 —</p>
+                <p class="advantage__description-feature">Большинство едет в Гранд Каньон и<br class="breaker breaker--desk">  толпится там</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="page-search">
+        <div class="page-search__wrapper">
+        <h2 class="page-search__title">Заинтересовались?</h2>
+        <p class="page-search__subtitle">Укажите предполагаемые даты поездки,<br class="breaker breaker--all"> и мы покажем вам лучшие предложения гостиниц в седоне</P>
+        <a class="page-search__button button" href="">Найти гостиницу</a>
+      </div>
+      </section>
+      <section class="contacts">
+      <h2 class="visually-hidden" hidden>Контакты</h2>
+
+        <iframe class="contacts__map-sedona " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20Arizona%2086336%2C%20Yhdysvallat!5e0!3m2!1sfi!2ses!4v1669898258479!5m2!1sfi!2ses" width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта Седоны.">
+        </iframe>
+
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__hashtag">
+          <a class="main-footer__link-hashtag" href="">#visitsedona</a>
+        </div>
+        <div class="social main-footer__social">
+          <ul class=" social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+                    <svg class="social__link-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_59930_13)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_59930_13">
+                      <rect width="24" height="24"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в Телеграме</span>
+                <svg  class="social__link-svg" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36427 16.0695C9.10627 16.3275 8.89102 16.5428 8.39377 16.5428L8.74102 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02227 10.314L1.25977 8.823C0.224021 8.49975 0.205271 7.78725 1.47577 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в Ютубе</span>
+                <svg class="social__link-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"/>
+                  </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright main-footer__copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <p class="copyright__text">Разработано</p>
+            <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+              </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
