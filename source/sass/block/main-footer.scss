@@ -46,6 +46,10 @@
     &--index {
       padding-right: 60px;
     }
+
+    &--catalog {
+      padding: 0 76px 30px 59px;
+    }
   }
 
   @media (min-width: $desktop-width) {

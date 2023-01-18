@@ -38,7 +38,7 @@
       }
 
       .card-block__wrapper {
-        padding: 22px 20px 11px 21px;
+        padding: 22px 20px 15px 20px;
       }
       grid-template-columns: 648px;
       grid-template-rows: 400px auto;
@@ -108,7 +108,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: #f2f2f2;
-    padding: 22px 20px 15px 20px;
+    padding: 22px 20px 15px;
 
   }
 
@@ -190,11 +190,11 @@
 }
 
 .card-block__like-button {
-  display: flex;
-  align-items: baseline;
   background-color: rgba(0, 0, 0, 0);
   border: none;
-  padding: 2px;
+  padding: 0;
+  width: 23px;
+  height: 21px;
 
   @media (min-width: $desktop-width) {
     color: #ffffff;

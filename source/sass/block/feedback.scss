@@ -55,7 +55,7 @@
   }
 }
 
-.feedback-form__group {
+.feedback__form-group {
   position: relative;
   margin: 0 auto;
   border: 0 none;
@@ -113,7 +113,7 @@
 }
 
 
-.feedback-form__group .feedback-form__title {
+.feedback__form-group .feedback__form-title {
   margin: 0 0 19px 0;
   font-weight: 700;
   font-size: 18px;
@@ -133,6 +133,10 @@
       margin-left: 21px;
     }
 
+    &--contacts {
+      margin-left: -18px;
+    }
+
     &--attractions {
       padding-top: 24px;
       margin-bottom: 28px;
@@ -147,6 +151,34 @@
       padding-right: 133px;
       width: 648px;
       position: relative;
+    }
+
+    &--impression {
+      padding-top: 24px;
+      &::before,
+        &::after {
+          top: 36px;
+        }
+    }
+
+    &--attractions {
+      padding-top: 27px;
+      margin-bottom: 28px;
+
+      &::before,
+      &::after {
+        top: 49px;
+      }
+    }
+
+    &--feelings {
+      padding-top: 18px;
+      margin-bottom: 28px;
+
+      &::before,
+      &::after {
+        top: 30px;
+      }
     }
   }
 
@@ -176,7 +208,7 @@
     &--impression,
     &--attractions,
     &--feelings {
-      padding-left: 290px;
+      padding-left: 286px;
       padding-right: 290px;
       width: 960px;
     }
@@ -202,7 +234,7 @@
   }
 }
 
-.feedback-form__group .feedback-form__list {
+.feedback__form-group .feedback__form-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -261,7 +293,7 @@
     @media (min-width: $desktop-width) {
       grid-template-columns: 430px;
 
-      .feedback-form__field-item {
+      .feedback__form-field-item {
         grid-template-columns: 430px;
       }
     }
@@ -272,20 +304,20 @@
   }
 }
 
-.feedback-form__group .feedback-form__field-item {
+.feedback__form-group .feedback__form-field-item {
   display: grid;
   grid-template-columns: 280px;
   grid-template-rows: 21px 58px;
 }
 
-.feedback-form__group .feedback-form__control-item {
+.feedback__form-group .feedback__form-control-item {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 46px;
   align-items: center;
 }
 
-.feedback-form__group .feedback-form__feelings-wrapper {
+.feedback__form-group .feedback__form-feelings-wrapper {
   display: grid;
   grid-template-columns: 280px;
   grid-template-rows: auto 58px 24px;
@@ -302,7 +334,7 @@
   }
 }
 
-.feedback-form__group .feedback-form__textarea {
+.feedback__form-group .feedback__form-textarea {
   margin-bottom: 56px;
 
   @media (min-width: $tablet-width) {
