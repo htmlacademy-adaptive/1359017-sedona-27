@@ -3,7 +3,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding: 17px 20px 0;
-  margin-bottom: 27px;
+  margin-bottom: -17px;
 
 }
 
@@ -35,7 +35,7 @@
 .video-presentation__subtitle {
   font-family: $accent-font;
   font-style: normal;
-  margin: 0 0 38px;
+  margin: 3px 21px 37px;
   text-transform: uppercase;
   text-align: center;
   padding: 0;
@@ -51,8 +51,6 @@
 }
 
 .video-presentation__video {
-  padding-left: 20px;
-  padding-right: 20px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
