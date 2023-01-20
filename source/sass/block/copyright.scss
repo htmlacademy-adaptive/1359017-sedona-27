@@ -2,17 +2,24 @@
   margin-top: 34px;
   margin-bottom: 22px;
 
-  @media (min-width:$tablet-width){
+  @media (min-width: $tablet-width) {
     margin: 7px 0 0;
+
+    &--diff {
+      margin: 7px -16px 0 8px;
+    }
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 7px 0 0;
+
+    &--diff {
+      margin: 7px -15px 0 18px;
+    }
   }
 }
 
 .copyright__text {
-  //width: 121px;
   text-align: center;
   font-family: $accent-font;
   color: #000000;
@@ -36,7 +43,7 @@
   &:active .copyright__text,
   &:active .copyright__icon {
     color: #b3b3b3;
-    fill :#b3b3b3;
+    fill: #b3b3b3;
   }
 }
 

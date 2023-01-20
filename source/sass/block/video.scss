@@ -4,9 +4,7 @@
   flex-wrap: wrap;
   padding: 17px 20px 0;
   margin-bottom: -17px;
-
 }
-
 
 .video-presentation__title {
   font-family: $accent-font;
@@ -14,12 +12,10 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   text-align: center;
   padding: 0 20px;
-
-
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -29,7 +25,6 @@
       padding: 43px 20px 5px;
     }
   }
-
 }
 
 .video-presentation__subtitle {
@@ -67,7 +62,6 @@
 
 .video-presentation__wrapper {
   position: relative;
-  margin-top:  38px;
   margin: 0 auto;
 }
 
