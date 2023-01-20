@@ -11,7 +11,7 @@
   flex-direction: column;
   flex-wrap: wrap;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     margin-bottom: 29px;
   }
 }
@@ -155,6 +155,7 @@
 
     &--impression {
       padding-top: 24px;
+
       &::before,
         &::after {
           top: 36px;
@@ -278,6 +279,8 @@
   }
 
   &--contacts {
+      grid-template-rows: repeat(2, 80px);
+
     @media (min-width: $desktop-width) {
       grid-template-columns: 402px;
 
@@ -297,10 +300,6 @@
         grid-template-columns: 430px;
       }
     }
-  }
-
-  &--contacts {
-    grid-template-rows: repeat(2, 80px);
   }
 }
 

@@ -95,8 +95,7 @@
 
 .welcome__title {
   margin: 0 auto;
-  padding: 0;
-  padding-bottom: 35px;
+  padding: 0 0 35px;
   color: #000000;
   font-family: $accent-font;
   font-weight: 700;
@@ -140,7 +139,6 @@
 .welcome__subtitle {
   margin: 0 auto;
   padding: 0 0 18px;
-  padding-bottom: 32px;
   font-weight: 400;
   font-family: $accent-font;
   font-size: 14px;
@@ -165,7 +163,6 @@
   text-align: center;
   color: #333333;
   margin: 0 auto;
-  padding: 0;
   width: 285px;
   padding: 0 0 0;
 
@@ -176,7 +173,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 18px 89px;
-
   }
 }
 
@@ -185,7 +181,6 @@
 
   &--catalog {
     @media (min-width: $tablet-width) {
-
     }
   }
 }
