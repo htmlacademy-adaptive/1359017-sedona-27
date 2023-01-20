@@ -27,7 +27,7 @@
     z-index: -1;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     background-image: url("../../img/map-tablet.jpg.png");
     width: 768px;
     background-size: 768px 350px;

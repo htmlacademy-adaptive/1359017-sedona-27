@@ -157,9 +157,9 @@
       padding-top: 24px;
 
       &::before,
-        &::after {
-          top: 36px;
-        }
+      &::after {
+        top: 36px;
+      }
     }
 
     &--attractions {
@@ -190,10 +190,11 @@
     &--attractions {
       padding-top: 50px;
       margin-bottom: 58px;
+
       &::before,
-        &::after {
-          top: 74px;
-        }
+      &::after {
+        top: 74px;
+      }
     }
 
     &--feelings {
@@ -279,7 +280,7 @@
   }
 
   &--contacts {
-      grid-template-rows: repeat(2, 80px);
+    grid-template-rows: repeat(2, 80px);
 
     @media (min-width: $desktop-width) {
       grid-template-columns: 402px;
@@ -308,7 +309,7 @@
   grid-template-columns: 280px;
   grid-template-rows: 21px 58px;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: 402px;
   }
 }

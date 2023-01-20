@@ -12,7 +12,6 @@
   }
 
   &--desk {
-
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -23,9 +22,8 @@
   }
 
   &--all {
-
     @media (min-width: $tablet-width) {
-    display:inline;
+      display: inline;
     }
 
     @media (min-width: 1200px) {
