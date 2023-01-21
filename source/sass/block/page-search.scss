@@ -30,6 +30,10 @@
     font-size: 30px;
     margin-bottom: 12px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 18px;
+  }
 }
 
 .page-search__subtitle {
@@ -43,6 +47,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
   }
 }
 

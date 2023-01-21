@@ -149,3 +149,16 @@
     font-size: 21px;
   }
 }
+
+
+.modal__button-success-wrapper {
+  width: 320px;
+  padding: 20px;
+  margin: 0 -20px -20px;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    padding: 44px 91px;
+  }
+}

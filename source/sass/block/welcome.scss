@@ -16,7 +16,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/intro-triangletab.svg"), url("../../img/back-tablet.jpg.jpg");
-    padding: 84px 19px 91px;
+    padding: 81px 19px 95px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/intro-triangletab.svg"), url("../../img/back-tabl.jpg@2x.jpg");
@@ -68,8 +68,8 @@
   padding-bottom: 64px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 87px;
-    padding-bottom: 117px;
+    padding-top: 96px;
+    padding-bottom: 106px;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,6 +104,7 @@
   text-transform: uppercase;
   width: 270px;
 
+
   @media (min-width: $tablet-width) {
     font-size: 21px;
     padding-top: 7px;
@@ -112,7 +113,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 32px;
+    padding-top: 27px;
   }
 }
 
@@ -138,7 +139,7 @@
 
 .welcome__subtitle {
   margin: 0 auto;
-  padding: 0 0 18px;
+  padding: 0 0 32px;
   font-weight: 400;
   font-family: $accent-font;
   font-size: 14px;

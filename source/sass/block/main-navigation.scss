@@ -16,6 +16,11 @@
   border: none;
   position: absolute;
 
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
+
   @media (min-width: 768px) {
     display: none;
   }
@@ -24,10 +29,26 @@
 .main-navigation__icon {
   &--burger {
     fill: #81b3d2;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--cross {
     fill: #ffffff;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -64,7 +85,7 @@
 }
 
 
-.main-avigation--nojs .main-navigation__wrapper {
+.main-navigation--nojs .main-navigation__wrapper {
   position: static;
   display: block;
 }
