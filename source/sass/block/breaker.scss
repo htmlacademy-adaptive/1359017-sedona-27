@@ -1,6 +1,10 @@
 .breaker {
   display: none;
 
+  &--mob {
+    display: inline;
+  }
+
   &--tab {
     @media (min-width: $tablet-width) {
       display: inline;
