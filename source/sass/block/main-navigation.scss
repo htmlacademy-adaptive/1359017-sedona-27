@@ -28,7 +28,7 @@
 
 .main-navigation__icon {
   &--burger {
-    fill: #81b3d2;
+    fill: $basic-blue;
 
     &:hover {
       opacity: 0.6;
@@ -40,7 +40,7 @@
   }
 
   &--cross {
-    fill: #ffffff;
+    fill: $basic-white;
 
     &:hover {
       opacity: 0.6;

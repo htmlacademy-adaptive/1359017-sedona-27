@@ -3,15 +3,15 @@
   min-height: 56px;
 }
 
-
-.logo {
+.main-header-logo-Sedona {
   position: relative;
   z-index: 2;
   width: 185px;
   outline: none;
   text-transform: uppercase;
-  color: #81b3d2;
+  color: $basic-blue;
 }
+
 
 .main-header__logo {
   position: absolute;
