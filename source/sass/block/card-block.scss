@@ -121,7 +121,7 @@
     bottom: 0;
     width: 100%;
     padding: 22px 20px 15px;
-    color: #ffffff;
+    color: $basic-white;
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
@@ -152,7 +152,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
-    color: #ffffff;
+    color: $basic-white;
   }
 }
 
@@ -164,7 +164,7 @@
 
 
   @media (min-width: $desktop-width) {
-    color: #ffffff;
+    color: $basic-white;
     padding-top: 4px;
   }
 }
@@ -193,7 +193,7 @@
   height: 21px;
 
   @media (min-width: $desktop-width) {
-    color: #ffffff;
+    color: $basic-white;
   }
 }
 
@@ -202,7 +202,7 @@
   fill: rgba(0, 0, 0, 0.3);
 
   @media (min-width: $desktop-width) {
-    fill: #ffffff;
+    fill: $basic-white;
   }
 }
 

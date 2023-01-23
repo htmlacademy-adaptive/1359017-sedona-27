@@ -35,7 +35,7 @@
 
 .welcome__logo-catalog {
   background-image: url("../../img/intro-triangle.svg.svg"), url("../../img/backr-mob.cat.jpg.jpg");
-  background-color: #81b3d2;
+  background-color: $basic-blue;
   background-position: center bottom;
   background-repeat: no-repeat, no-repeat;
   display: flex;

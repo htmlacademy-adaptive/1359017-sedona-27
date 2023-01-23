@@ -17,6 +17,7 @@
   background-color: #f2f2f2;
   cursor: pointer;
 
+
   &:active {
     background-color: #d5d5d5;
     outline: none;
@@ -52,7 +53,7 @@
 }
 
 .control__input:focus + .control__mark--radio {
-  background-color: #ffffff;
+  background-color: $basic-white;
   outline: 4px solid #e5e5e5;
   outline-offset: -4px;
 }
@@ -72,7 +73,7 @@
 }
 
 .control__input:focus + .control__mark--checkbox {
-  background-color: #ffffff;
+  background-color: $basic-white;
   outline: 4px solid #e5e5e5;
   outline-offset: -4px;
 }
