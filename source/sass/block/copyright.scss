@@ -45,6 +45,10 @@
     color: #b3b3b3;
     fill: #b3b3b3;
   }
+
+  &:focus {
+    outline: 1px solid $basic-blue;
+  }
 }
 
 .copyright__icon {
