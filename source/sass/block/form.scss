@@ -30,3 +30,11 @@
     font-size: 14px;
   }
 }
+
+.form__button {
+  outline: none;
+
+  &:focus {
+    outline: 4px solid $basic-blue;
+  }
+}

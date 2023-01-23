@@ -28,6 +28,11 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+
+  &:focus {
+    outline: 1px solid #e5e5e5;
+    opacity: 1;
+  }
 }
 
 .main-footer__wrapper {
