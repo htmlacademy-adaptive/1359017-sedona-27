@@ -60,6 +60,17 @@
   margin: 0 auto;
   border: 0 none;
 
+  &::after {
+    position: absolute;
+    content: "";
+    left: -20px;
+    bottom: 0;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    z-index: 3;
+  }
+
   &--who {
     padding: 0 0 39px 0;
   }
@@ -81,11 +92,19 @@
   &--feelings {
     padding: 0 0 14px 0;
     grid-column: 1/-1;
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
+
+    &::after {
+      display: none;
+    }
 
     &--who::before {
       position: absolute;
@@ -112,7 +131,6 @@
   }
 }
 
-
 .feedback__form-group .feedback__form-title {
   margin: 0 0 19px 0;
   font-weight: 700;
@@ -123,6 +141,8 @@
   text-align: center;
   padding: 25px 0 0 0;
   word-break: break-word;
+
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -151,6 +171,24 @@
       padding-right: 133px;
       width: 648px;
       position: relative;
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        top: 36px;
+        width: 123px;
+        height: 1px;
+        background-color: #dbdbdb;
+      }
+
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
     }
 
     &--impression {
@@ -213,6 +251,11 @@
       padding-left: 286px;
       padding-right: 290px;
       width: 960px;
+
+      &::before,
+      &::after {
+        width: 280px;
+      }
     }
 
     &--contacts {
